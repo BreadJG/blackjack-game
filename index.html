@@ -7,6 +7,7 @@
   <title>Blackjack</title>
   <script defer src="scripts/main.js"></script>
   <link rel="stylesheet" href="./extras/HereIsOneIPreparedEarlier.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -31,6 +32,22 @@
       <button id="deal-button" type="button">Deal</button>
       <button id="hit-button" type="button">Hit</button>
       <button id="stand-button" type="button">Stand</button>
+    </div>
+    <div class="buttons">
+      <button id="shuffle-button" type="button">Shuffle</button>
+      <button id="3-button">3 Deck Shuffle</button>
+      <button id="6-button">6 Deck Shuffle</button>
+    </div>
+    <div class="col">
+      <label class="player-name row">Cards Left: 
+        <span id="cards-left"></span>
+      </label>
+      <label class="player-name row">Wins:
+        <span id="wins"></span>
+      </label>
+      <label class="plaer-name row">Losses:
+        <span id="losses"></span>
+      </label>
     </div>
   </div>
 </body>
