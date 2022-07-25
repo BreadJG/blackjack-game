@@ -197,7 +197,7 @@ function dealToDealer(){
   let draw = deck[0]
   let cardName = draw.rank + "_" + "of" + "_" + draw.suit;
   let cardImage = document.createElement('img');
-  cardImage.src = "/blackjack/images/" + cardName + ".png";
+  cardImage.src = "/images/" + cardName + ".png";
   
   dealerArr.push(draw.pointValue);
   deck.shift();
@@ -207,14 +207,14 @@ function dealToDealer(){
 function showHidden(){
   let card = hiddenArr[0] + "_" + "of" + "_" + hiddenArr[1];
   let hidden = dealerHand.firstChild;
-  hidden.src = "/blackjack/images/" + card + ".png";
+  hidden.src = "/images/" + card + ".png";
 }
 
 function dealHidden(){
   let draw = deck[0]
   let cardName = draw.rank + "_" + "of" + "_" + draw.suit;
   let cardImage = document.createElement('img');
-  cardImage.src = "/blackjack/images/hidden_card.jpeg";
+  cardImage.src = "/images/hidden_card.jpeg";
   
   dealerArr.push(draw.pointValue);
   deck.shift();
@@ -227,7 +227,7 @@ function dealToPlayer(){
   let draw = deck[0]
   let cardName = draw.rank + "_" + "of" + "_" + draw.suit;
   let cardImage = document.createElement('img');
-  cardImage.src = "/blackjack/images/" + cardName + ".png";
+  cardImage.src = "/images/" + cardName + ".png";
   
   playerArr.push(draw.pointValue);
   deck.shift();
